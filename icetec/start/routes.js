@@ -19,3 +19,11 @@ const Route = use('Route')
 Route.get('/', () => {
   return { greeting: 'Hello world in JSON' }
 })
+
+Route.post('/user', 'UserController.store')
+
+Route.post('/session', 'SessionController.store')
+
+
+Route.get('/candidato', 'CandidatoController.index')
+Route.post('/candidato', 'CandidatoController.store')
